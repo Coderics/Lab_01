@@ -1,0 +1,59 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<?xml-stylesheet type="text/xsl" href="movies.xsl"?>
+<movies>
+    <movie id="1">
+        <movieTitle>Inception</movieTitle>
+        <director>Christopher Nolan</director>
+        <year>2010</year>
+        <actors>
+            <actor>Leonardo DiCaprio</actor>
+            <actor>Joseph Gordon-Levitt</actor>
+            <actor>Elliot Page</actor>
+        </actors>
+    </movie>
+    <movie id="2">
+        <movieTitle>Interstellar</movieTitle>
+        <director>Christopher Nolan</director>
+        <year>2014</year>
+        <actors>
+            <actor>Matthew McConaughey</actor>
+            <actor>Anne Hathaway</actor>
+            <actor>Jessica Chastain</actor>
+        </actors>
+    </movie>
+    <movie id="3">
+        <movieTitle>The Dark Knight</movieTitle>
+        <director>Christopher Nolan</director>
+        <year>2008</year>
+        <actors>
+            <actor>Christian Bale</actor>
+            <actor>Heath Ledger</actor>
+            <actor>Aaron Eckhart</actor>
+        </actors>
+    </movie>
+    <movie id="4">
+        <movieTitle>Avatar</movieTitle>
+        <director>James Cameron</director>
+        <year>2009</year>
+        <actors>
+            <actor>Sam Worthington</actor>
+            <actor>Zoe Saldana</actor>
+            <actor>Sigourney Weaver</actor>
+        </actors>
+    </movie>
+    <movie id="5">
+        <movieTitle>Titanic</movieTitle>
+        <director>James Cameron</director>
+        <year>1997</year>
+        <actors>
+            <actor>Leonardo DiCaprio</actor>
+            <actor>Kate Winslet</actor>
+            <actor>Billy Zane</actor>
+        </actors>
+    </movie>
+</movies>
+
+<!-- XPath Queries -->
+<!-- Select all movie titles: //movieTitle -->
+<!-- Select the director of the second movie: //movie[2]/director -->
+<!-- List down the actors of the fourth movie: //movie[4]/actors/actor -->

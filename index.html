@@ -1,0 +1,37 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>X Inc. Movie Database Website</title>
+</head>
+<body onload="applyXSLT()">
+    <!-- This movie database website dynamically displays XML movie data. When the page loads, it automatically applies an XSLT transformation to display movie data. -->
+
+    <h1>X Inc. Movie Database Website</h1>
+
+    <!-- This div displays the transformed XML content. The content is processed using an XSLT stylesheet. -->
+    <div id="output"></div>
+
+    <div class="container">
+        <h2>XPath Query</h2>
+        <!-- Section for predefined XPath queries. Clicking on any query will automatically insert it into the input field. -->
+        <div class="prebuilt-query">
+            <h3>Try this XPath Queries:</h3>
+            <p>Select all movie titles: <span id="pre-query1">//movieTitle</span></p>
+            <p>Select the director of the second movie: <span id="pre-query2">/movies/movie[2]/director</span></p>
+            <p>Select all the actors of the fourth movie: <span id="pre-query3">/movies/movie[4]/actors/actor</span></p>
+        </div>
+        
+        <!-- Section for custom XPath queries. Users can enter their own XPath queries and execute them using the "Run Query" button. -->
+        <div class="custom-query">
+            <input type="text" id="xpathQuery" placeholder="Enter XPath (e.g., //movieTitle)" />
+            <button onclick="queryXML()">Run Query</button>
+        </div>
+        <div id="queryOutput"></div>
+    </div>
+
+    <!-- External JavaScript file (script.js) handles XSLT transformation and XPath querying -->
+    <script src="script.js"></script>
+</body>
+</html>
